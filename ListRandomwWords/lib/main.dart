@@ -9,6 +9,7 @@ class RandomWordsApp extends StatelessWidget{
    @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Random Words',
       theme: ThemeData(
         primaryColor: Colors.green,
@@ -34,7 +35,7 @@ class RandomWordsState extends State<RandomWords>{
   Widget build(BuildContext context) {
       return  Scaffold(
         appBar: AppBar(
-          title: Text('Random english words'),
+          title: Text('Random english List words'),
           actions: <Widget>[
             IconButton(icon: Icon(
               Icons.assignment_turned_in
